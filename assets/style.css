@@ -11,24 +11,27 @@ header h1 {
     float: left;
 }
 .nav li {
-    display: inline-block;
-    justify-content: right;
+    display: block;
+    /* justify-content: flex-end; */
+    float: right;
     margin-left: 25px;
-    padding: 20px;
+    padding: 35px 20px 20px 20px;
 }
 
 .welcome {
+    display: flex;
     text-align: center;
     display: block;
-    padding: 25px 50px 50px 50px;
+    flex-wrap: wrap;
+    padding: 125px 50px 0px 50px;
     font-size: 40px;
 }
 
-.about-me {
+#about-me {
     display: flex;
     flex-direction: row ;
     flex-wrap: wrap;
-    border-top: rgb(202, 184, 184) 3px solid;
+    border-top: rgb(202, 184, 184) 1.5px solid;
     padding: 20px;
 }
 
@@ -51,30 +54,103 @@ header h1 {
 }
 
 .work {
-    display: flex;
-    flex-direction: row ;
-    flex-wrap: wrap;
-    border-top: rgb(202, 184, 184) 3px solid;
+    /* display: flex;  //o */
+    position: relative;
+    /* flex-direction: row ; */
+    /* flex-wrap: wrap; */
+    border-top: rgb(202, 184, 184) 1.5px solid;
     padding: 20px;
+    /* box-sizing: border-box; */
 }
 
 .css-cheat-sheet {
-    flex:40%;
-}
-
-.project-1 {
-    width: 100px;
-    /* max-width: 100%; */
+    /* flex:40%; */
+   
+    width: 100%;
     height: auto;
 }
 
-.flex-right {
-    padding: 20px;
-    flex:60%
+.project-1 {
+    width: 40%; 
+    max-width: 100%;
+    height: auto;
+} 
+
+.project-1:hover {
+    outline-color: rgb(54, 68, 52);
 }
+
+.float-right {
+    /* padding: 20px;
+    flex:60% */
+    float: left;
+    
+    padding: 30px 20px 100px 20px;
+    width: 55%;
+    margin: 0 10px;
+}
+
+.project-2 {
+    position: relative;
+    float: right;
+    bottom: 510px;
+    width:19%;
+    height: auto;
+    
+}
+
+.project-3 {
+    position: relative;
+    float: right;
+    bottom: 510px;
+    width:19%;
+    margin-right: 100px;
+    height: auto;
+}
+
+.project-4 {
+    position: relative;
+    float: right;
+    bottom: 250px;
+    left: 245px;
+    width:19%;
+    margin-top: 5px;
+    height: auto;
+    
+}
+
+.project-5 {
+    position: relative;
+    float: right;
+    width:19%;
+    bottom: 250px;
+    left: 835px;
+    margin-top: 5px;
+    height: auto;
+}
+
+.contact-me li {
+    display: inline-block;
+    /* justify-content: flex-end; */
+    /* float: right; */
+    margin-left: 25px;
+    padding: 35px 20px 20px 20px;
+}   
 
 @media (max-width:400px) {
     .about-me-right , .about-me-left {
+        flex:100%;
+    }
+}
+
+@media (max-width:400px) {
+    .work {
+        flex:100%;
+    }
+}
+
+@media (max-width:400px) {
+    #contact {
         flex:100%;
     }
 }
