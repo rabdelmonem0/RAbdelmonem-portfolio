@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(54, 68, 52);
+    /* background-color: rgb(54, 68, 52); */
     scroll-behavior: smooth;
     color: rgb(202, 184, 184);
     font-family: 'Garamond';
@@ -38,7 +38,7 @@ header h1 {
 .about-me-left {
     /* flex-grow: 1; */
     /* width: 40vw; */
-    flex: 50%;
+    flex: 40%;
 }
 
 .personal-photo {

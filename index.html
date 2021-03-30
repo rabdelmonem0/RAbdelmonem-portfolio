@@ -5,19 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Professional Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
   <link rel="stylesheet" type="text/css" href="./assets/style.css" />
 </head>
 <body>
     <header>
-        <h1>Rwan Abdelmonem</h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand">Rwan Abdelmonem</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#about-me">About Me <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#work">Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
         </nav>
-        <p class="welcome">Thank you for visiting my website! I put together this webpage to showcase my projects. Feel free to explore and contact me for any additional information and collaboration!</p>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <p class="lead text-center">Thank you for visiting my website! I put together this webpage to showcase my projects. Feel free to explore and contact me for any additional information and collaboration!</p>
+            </div>
+        </div>
     </header>
     <main>
         <article class="content">
@@ -29,7 +42,7 @@
                 <div class="about-me-right">
                     <h1 id="hi">Hi, I'm Rwan Abdelmonem.</h1>
                     <p>
-                        A Fullstack developer in the works! I graduated with a degree in Mechanical Engineering and currently pursuing a career in software development. I am currently expanding my experince in JavaScript, Node.js, and many more. I know with my current engineering experince and future learning, I can excel in working with any individual.
+                        A Fullstack web developer in the works! I graduated with a degree in Mechanical Engineering and currently pursuing a career in software development. I am currently expanding my experince in JavaScript, Node.js, and many more. I know with my current engineering experince and future learning, I can excel in working with any individual.
                     </p>
                 </div>
             </section>
@@ -53,17 +66,19 @@
                     </div>
                 </div>
             </section>
-            <section id="contact" class="contact-me">
-                <h1>Contact Me</h1>
-                <nav>
-                    <ul>
-                        <li><a href="mailto:rabdelmonem0@gmail.com">Email</a></li>
-                        <li>(714)768-1961</li>
-                        <li><a href="">LinkedIn</a></li>
-                        <li><a href="">Resume</a></li>
-                    </ul>
-                </nav>
-            </section>
+            <footer>
+                <div class="card col-12 mb-5 text-center" id="contact">
+                    <div class="card-header">
+                      Contact Me!
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Thank you again for taking the time to look through my website. Please feel free to click on any of the links below to see more of my work!</p>
+                      <a href="mailto:rabdelmonem0@gmail.com" class="btn btn-primary">Email</a>
+                      <a href="https://github.com/rabdelmonem0" class="btn btn-primary">GitHub</a>
+                      <a href="mailto:rabdelmonem0@gmail.com" class="btn btn-primary">LinkedIn</a>
+                    </div>
+                </div>
+            </footer>
         </article>
     </main>
-
+</body>
