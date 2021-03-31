@@ -1,8 +1,8 @@
 * {
     /* background-color: rgb(54, 68, 52); */
     scroll-behavior: smooth;
-    color: rgb(202, 184, 184);
-    font-family: 'Garamond';
+    color: rgb(57, 50, 41);
+    font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
 }
 
@@ -25,6 +25,10 @@ header h1 {
     flex-wrap: wrap;
     padding: 125px 50px 0px 50px;
     font-size: 40px;
+}
+
+.card:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
 #about-me {
