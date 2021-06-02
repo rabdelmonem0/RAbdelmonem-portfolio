@@ -151,6 +151,9 @@ header h1 {
     .work {
         flex:100%;
     }
+    .card {
+        flex: 100%;
+    }
 }
 
 @media (max-width:400px) {
